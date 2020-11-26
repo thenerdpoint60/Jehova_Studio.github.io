@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jehova Games</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="devlog.css">
+	<link rel="stylesheet" type="text/css" href="game_page.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="menu">
+		<img src="logo_jehova_alpha.png" alt="Jehova Logo" onclick="document.location.href='#home'">
+		<div class="links">
+			<a href="#home">Home</a>
+			<a href="#games_page">Games</a>
+			<a href="#last_updates">Last updates</a>
+			<a href="#contact">Contacts</a>
+		</div>
+	</div>
+
+	<!-- HEAD -->
+	<div class="presentation" id="home">
+		<div class="line lineUp"></div>
+		<div class="line lineDown"></div>
+
+		<div class="logo">
+			<img src="logo_jehova_alpha.png" alt="Jehova Logo">
+		</div>
+	</div>
+
+	<div class="panels">
+		<!-- ABOUT ME -->
+		<p class="aboutMe">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!-- ENGINES -->
+		<div class="panel gamesEng" align="center">
+			<h3>Games Engines</h3>
+			<div align="left">
+				<img src="https://s1.qwant.com/thumbr/0x380/b/a/04a97e6fd1b5af1616a973ee3437a3b588108f20b38f2b3e43e4dcf2ada8c4/photo.jpg?u=https%3A%2F%2Fyt3.ggpht.com%2F-n9YqjJCKHak%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FFJmfOSwUIuc%2Fs900-c-k-no-mo-rj-c0xffffff%2Fphoto.jpg&q=0&b=1&p=0&a=1" alt="Unity Logo">
+				<p>Unity</p>
+			</div>
+
+			<div align="left">
+				<img src="https://s1.qwant.com/thumbr/0x380/b/a/04a97e6fd1b5af1616a973ee3437a3b588108f20b38f2b3e43e4dcf2ada8c4/photo.jpg?u=https%3A%2F%2Fyt3.ggpht.com%2F-n9YqjJCKHak%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FFJmfOSwUIuc%2Fs900-c-k-no-mo-rj-c0xffffff%2Fphoto.jpg&q=0&b=1&p=0&a=1" alt="Unity Logo">
+				<p>Unity</p>
+			</div>
+		</div>
+
+		<!-- HISTORY -->
+		<div class="panel" align="center">
+			<h3>History</h3>
+			<p>
+				sLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+
+		<!-- APPLICATIONS -->
+		<hr id="games_page">
+		<div class="panel" align="center">
+			<a class="close_game"><i class='fas fa-times'></i></a>
+			<h3>Games</h3>
+			<div class="previewApps" align="left">
+				<div class="store">
+					<p onmousedown="change_store('all'); $(this).css('text-decoration', 'underline');" style="text-decoration: underline;">All</p>
+				</div>
+				<div class="apps" align="center">
+					<div class="app_body loading"></div> <div class="app_body loading"></div> <div class="app_body loading"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- DEVLOGS LIST -->
+		<div class="panel last_updates" id="last_updates" align="center">
+			<h3>Last updates</h3>
+			<div class="devlogs_list"></div>
+			
+			<div class="log logSee">
+				<p id="plus" onmousedown="$('#last_updates').attr('class', 'panel last_updates_lar');"><i class="fas fa-plus"></i></p>
+				<p id="minus" onmousedown="$('#last_updates').attr('class', 'panel last_updates'); document.location.href='#last_updates';"><i class="fas fa-minus"></i></p>
+				<p id="all" onmousedown="$('#last_updates').attr('class', 'panel last_updatesO');"><i class="fas fa-expand-alt"></i></p>
+			</div>
+		</div>
+
+		<!-- CONTACT -->
+		<div class="panel contact" id="contact" align="center">
+			<h3>Contact</h3>
+			<img src="facebook.jpg" alt="Facebook logo">
+			<img src="twitter.png" alt="Twitter logo">
+			<img src="discord.png" alt="Discord logo">
+			<img src="instagram.png" alt="Instagram logo">
+			<img src="youtube.png" alt="YouTube logo">
+		</div>
+		<div class="credit">
+			<p>&copy; by <a target="blank" href="https://yukome.000webhostapp.com/sallt/">Sallt</a> for <u>Jehova Games</u></p>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="display.js"></script>
+
+	<!-- Icone -->
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true">
+		import { config } from '@fortawesome/fontawesome-svg-core';
+	</script>
+	<script src="functions.js"></script>
+</body>
+</html>
